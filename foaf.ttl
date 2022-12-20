@@ -1,0 +1,30 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://raw.githubusercontent.com/emilijana404/FOAF/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/emilijana404/FOAF/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/emilijana404/FOAF/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/emilijana404/FOAF/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Emilijana Jovkovska" ;
+  foaf:title "Mrs" ;
+  foaf:givenname "Emilijana" ;
+  foaf:family_name "Jovkovska" ;
+  foaf:mbox_sha1sum "bd054bd3958cdca4a6b62bcd4527557b962bc509" ;
+  foaf:schoolHomepage <https://www.finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Jana Naumoska" ;
+    foaf:mbox_sha1sum "b55960831aeb84c3dac0f221012b7f0cb399ad12" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/naumoskajana/VBS/main/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Emilijan Koteski" ;
+    foaf:mbox_sha1sum "340295c3802ab175cbd1e09325d4c1d667b464d4" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/bratuchedot/foaf/master/foaf.ttl>
+  ] .
